@@ -1,0 +1,193 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;box-sizing:border-box;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+canvas#cvs {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.13;
+  z-index: -1;
+}
+.description {
+  font-weight: 500;
+  color: #fff;
+  line-height: 29px;
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+}
+.loading {
+  animation: extend 3s steps(3, end) infinite;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  position: absolute;
+  font-size: 22px;
+  top: -1px;
+}
+.loading:before {
+  content: "...";
+}
+@keyframes extend {
+  0% {
+    width: .25em;
+  }
+  100% {
+    width: 1em;
+  }
+}
+.circles {
+  width: 40vmin;
+  height: 40vmin;
+  position: relative;
+  -webkit-perspective: 50000px;
+  perspective: 50000px;
+  color: #ffffff;
+}
+.circles span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 18.4%;
+  height: 18.4%;
+  border-radius: 100%;
+  background: url(http://www.faprika.com/wp-content/uploads/2018/11/whitelogo.png);
+  background-position: -60px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.circles div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 1.5vmin solid;
+  border-top: 1.5vmin solid transparent;
+  border-radius: 100%;
+}
+.circles div:nth-child(1) {
+  -webkit-animation: anim-1 1.5s linear infinite;
+          animation: anim-1 1.5s linear infinite;
+}
+.circles div:nth-child(2) {
+  -webkit-animation: anim-2 1.5s linear infinite;
+          animation: anim-2 1.5s linear infinite;
+}
+.circles div:nth-child(3) {
+  -webkit-animation: anim-3 1.5s linear infinite;
+          animation: anim-3 1.5s linear infinite;
+}
+@-webkit-keyframes anim-1 {
+  from {
+    -webkit-transform: rotateZ(120deg) rotateX(66deg) rotateZ(0deg);
+            transform: rotateZ(120deg) rotateX(66deg) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(120deg) rotateX(66deg) rotateZ(360deg);
+            transform: rotateZ(120deg) rotateX(66deg) rotateZ(360deg);
+  }
+}
+@keyframes anim-1 {
+  from {
+    -webkit-transform: rotateZ(120deg) rotateX(66deg) rotateZ(0deg);
+            transform: rotateZ(120deg) rotateX(66deg) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(120deg) rotateX(66deg) rotateZ(360deg);
+            transform: rotateZ(120deg) rotateX(66deg) rotateZ(360deg);
+  }
+}
+@-webkit-keyframes anim-2 {
+  from {
+    -webkit-transform: rotateZ(240deg) rotateX(66deg) rotateZ(0deg);
+            transform: rotateZ(240deg) rotateX(66deg) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(240deg) rotateX(66deg) rotateZ(360deg);
+            transform: rotateZ(240deg) rotateX(66deg) rotateZ(360deg);
+  }
+}
+@keyframes anim-2 {
+  from {
+    -webkit-transform: rotateZ(240deg) rotateX(66deg) rotateZ(0deg);
+            transform: rotateZ(240deg) rotateX(66deg) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(240deg) rotateX(66deg) rotateZ(360deg);
+            transform: rotateZ(240deg) rotateX(66deg) rotateZ(360deg);
+  }
+}
+@-webkit-keyframes anim-3 {
+  from {
+    -webkit-transform: rotateZ(360deg) rotateX(66deg) rotateZ(0deg);
+            transform: rotateZ(360deg) rotateX(66deg) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
+            transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
+  }
+}
+@keyframes anim-3 {
+  from {
+    -webkit-transform: rotateZ(360deg) rotateX(66deg) rotateZ(0deg);
+            transform: rotateZ(360deg) rotateX(66deg) rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
+            transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
+  }
+}
