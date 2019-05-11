@@ -1,4 +1,4 @@
-var cvs = document.getElementById('cvs');
+var cvs = document.getElementById('background');
 cvs.height = window.innerHeight;
 cvs.width = window.innerWidth;
 var ctx = cvs.getContext('2d');

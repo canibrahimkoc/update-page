@@ -48,7 +48,7 @@ body {
 		background-position: 0% 50%
 	}
 }
-canvas#cvs {
+#background {
   position: absolute;
   right: 0;
   left: 0;
