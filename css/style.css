@@ -56,7 +56,7 @@ canvas#cvs {
   bottom: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.13;
+  opacity: 0.07;
   z-index: -1;
 }
 .description {
@@ -67,6 +67,10 @@ canvas#cvs {
   font-size: 18px;
   text-align: center;
   position: relative;
+}
+.description img {
+  max-width: 120px;
+  margin: 30px 0 0 0;
 }
 .loading {
   animation: extend 3s steps(3, end) infinite;
@@ -86,108 +90,5 @@ canvas#cvs {
   }
   100% {
     width: 1em;
-  }
-}
-.circles {
-  width: 40vmin;
-  height: 40vmin;
-  position: relative;
-  -webkit-perspective: 50000px;
-  perspective: 50000px;
-  color: #ffffff;
-}
-.circles span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  display: block;
-  width: 18.4%;
-  height: 18.4%;
-  border-radius: 100%;
-  background: url(http://www.faprika.com/wp-content/uploads/2018/11/whitelogo.png);
-  background-position: -60px 0px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.circles div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-left: 1.5vmin solid;
-  border-top: 1.5vmin solid transparent;
-  border-radius: 100%;
-}
-.circles div:nth-child(1) {
-  -webkit-animation: anim-1 1.5s linear infinite;
-          animation: anim-1 1.5s linear infinite;
-}
-.circles div:nth-child(2) {
-  -webkit-animation: anim-2 1.5s linear infinite;
-          animation: anim-2 1.5s linear infinite;
-}
-.circles div:nth-child(3) {
-  -webkit-animation: anim-3 1.5s linear infinite;
-          animation: anim-3 1.5s linear infinite;
-}
-@-webkit-keyframes anim-1 {
-  from {
-    -webkit-transform: rotateZ(120deg) rotateX(66deg) rotateZ(0deg);
-            transform: rotateZ(120deg) rotateX(66deg) rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(120deg) rotateX(66deg) rotateZ(360deg);
-            transform: rotateZ(120deg) rotateX(66deg) rotateZ(360deg);
-  }
-}
-@keyframes anim-1 {
-  from {
-    -webkit-transform: rotateZ(120deg) rotateX(66deg) rotateZ(0deg);
-            transform: rotateZ(120deg) rotateX(66deg) rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(120deg) rotateX(66deg) rotateZ(360deg);
-            transform: rotateZ(120deg) rotateX(66deg) rotateZ(360deg);
-  }
-}
-@-webkit-keyframes anim-2 {
-  from {
-    -webkit-transform: rotateZ(240deg) rotateX(66deg) rotateZ(0deg);
-            transform: rotateZ(240deg) rotateX(66deg) rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(240deg) rotateX(66deg) rotateZ(360deg);
-            transform: rotateZ(240deg) rotateX(66deg) rotateZ(360deg);
-  }
-}
-@keyframes anim-2 {
-  from {
-    -webkit-transform: rotateZ(240deg) rotateX(66deg) rotateZ(0deg);
-            transform: rotateZ(240deg) rotateX(66deg) rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(240deg) rotateX(66deg) rotateZ(360deg);
-            transform: rotateZ(240deg) rotateX(66deg) rotateZ(360deg);
-  }
-}
-@-webkit-keyframes anim-3 {
-  from {
-    -webkit-transform: rotateZ(360deg) rotateX(66deg) rotateZ(0deg);
-            transform: rotateZ(360deg) rotateX(66deg) rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
-            transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
-  }
-}
-@keyframes anim-3 {
-  from {
-    -webkit-transform: rotateZ(360deg) rotateX(66deg) rotateZ(0deg);
-            transform: rotateZ(360deg) rotateX(66deg) rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
-            transform: rotateZ(360deg) rotateX(66deg) rotateZ(360deg);
   }
 }
