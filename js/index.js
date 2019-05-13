@@ -25,8 +25,7 @@ function rain() {
     drops[col]++;
   }
 }
-function randColour()
-{
+function randColour() {
   return'rgb(' + 
     Math.floor(Math.random() * 256) + ',' + 
     Math.floor(Math.random() * 256) + ',' + 
