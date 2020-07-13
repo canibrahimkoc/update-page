@@ -1,10 +1,3 @@
-/*!
- * Webflow: Front-end site library
- * @license MIT
- * Inline scripts may access the api using an async handler:
- *   var Webflow = Webflow || [];
- *   Webflow.push(readyFunction);
- */
 (function () {
   'use strict';
 
@@ -4341,26 +4334,644 @@
  * ----------------------------------------------------------------------
  * Webflow: Interactions: Init
  */
-Webflow.require('ix').init([
-  {"slug":"column-hover","name":"Column hover","value":{"style":{"opacity":0},"triggers":[{"type":"hover","stepsA":[{"transition":"transform 500ms ease 0","x":"-4px","y":"-4px","z":"0px"}],"stepsB":[{"transition":"transform 400ms ease 0","x":"0px","y":"0px","z":"0px"}]},{"type":"load","preload":true,"stepsA":[{"opacity":1,"transition":"opacity 500ms ease 0"}],"stepsB":[]}]}},
-  {"slug":"column-hover-2","name":"Column hover 2","value":{"style":{"opacity":0},"triggers":[{"type":"hover","stepsA":[{"transition":"transform 500ms ease 0","x":"-4px","y":"-4px","z":"0px"}],"stepsB":[{"transition":"transform 400ms ease 0","x":"0px","y":"0px","z":"0px"}]},{"type":"load","preload":true,"stepsA":[{"wait":"250ms"},{"opacity":1,"transition":"opacity 500ms ease 0"}],"stepsB":[]}]}},
-  {"slug":"column-hover-3","name":"Column hover 3","value":{"style":{"opacity":0},"triggers":[{"type":"hover","stepsA":[{"transition":"transform 500ms ease 0","x":"-4px","y":"-4px","z":"0px"}],"stepsB":[{"transition":"transform 400ms ease 0","x":"0px","y":"0px","z":"0px"}]},{"type":"load","preload":true,"stepsA":[{"wait":"500ms"},{"opacity":1,"transition":"opacity 500ms ease 0"}],"stepsB":[]}]}},
-  {"slug":"tower-hover-animation","name":"Tower hover animation","value":{"style":{},"triggers":[{"type":"hover","preserve3d":true,"stepsA":[{"transition":"transform 500ms ease 0","x":"-86px","y":"-99px","z":"70px"}],"stepsB":[{"transition":"transform 500ms ease 0","x":"-80px","y":"-94px","z":"70px"}]},{"type":"hover","selector":".play-box__square-1","preserve3d":true,"stepsA":[{"transition":"transform 500ms ease 0","x":"-70px","y":"-85px","z":"40px"}],"stepsB":[{"transition":"transform 500ms ease 0","x":"-62px","y":"-76px","z":"50px"}]},{"type":"hover","selector":".play-box__square-2","preserve3d":true,"stepsA":[{"transition":"transform 500ms ease 0","x":"-50px","y":"-65px","z":"10px"}],"stepsB":[{"transition":"transform 500ms ease 0","x":"-41px","y":"-60px","z":"50px"}]}]}},
-  {"slug":"hovering-on-load","name":"Hovering on Load","value":{"style":{},"triggers":[{"type":"load","preload":true,"loopA":true,"preserve3d":true,"stepsA":[{"transition":"transform 1500ms ease 0","x":"0px","y":"0px","z":"10px"},{"transition":"transform 1500ms ease 0","x":"0px","y":"0px","z":"5px"}],"stepsB":[]}]}},
-  {"slug":"hovering-on-load-string-block","name":"Hovering on Load String Block","value":{"style":{"opacity":0},"triggers":[{"type":"load","preload":true,"loopA":true,"stepsA":[{"opacity":1,"transition":"opacity 500ms ease 0"},{"transition":"transform 1500ms ease 0","x":"-3px","y":"-3px","z":"0px"},{"transition":"transform 1500ms ease 0","x":"0px","y":"0px","z":"0px"}],"stepsB":[]}]}},
-  {"slug":"loading-line-animation","name":"Loading line animation","value":{"style":{"width":"0px"},"triggers":[{"type":"load","preload":true,"stepsA":[{"width":"100%","transition":"width 1500ms ease 0"}],"stepsB":[]}]}},
-  {"slug":"loading-line-animation-2","name":"Loading line animation 2","value":{"style":{"width":"0px"},"triggers":[{"type":"load","preload":true,"stepsA":[{"wait":"500ms"},{"width":"100%","transition":"width 1500ms ease 0"}],"stepsB":[]}]}},
-  {"slug":"loading-line-animation-3","name":"Loading line animation 3","value":{"style":{"width":"0px"},"triggers":[{"type":"load","preload":true,"stepsA":[{"wait":"1000ms"},{"width":"100%","transition":"width 1500ms ease 0"}],"stepsB":[]}]}},
-  {"slug":"loading-line-animation-6-long","name":"Loading line animation 6 long","value":{"style":{"width":"0px"},"triggers":[{"type":"load","preload":true,"stepsA":[{"wait":"1000ms"},{"width":"100%","transition":"width 1500ms ease 0"}],"stepsB":[]}]}},
-  {"slug":"loading-line-animation-4-shortened","name":"Loading line animation 4 shortened","value":{"style":{"width":"0px"},"triggers":[{"type":"load","preload":true,"stepsA":[{"wait":"1500ms"},{"width":"50%","transition":"width 1500ms ease 0"}],"stepsB":[]}]}},
-  {"slug":"loading-line-animation-5","name":"Loading line animation 5","value":{"style":{"width":"0px"},"triggers":[{"type":"load","preload":true,"stepsA":[{"wait":"2000ms"},{"width":"100%","transition":"width 2000ms ease 0"}],"stepsB":[]}]}},
-  {"slug":"loading-line-animation-6shorted","name":"Loading line animation 6shorted","value":{"style":{"width":"0px"},"triggers":[{"type":"load","preload":true,"stepsA":[{"wait":"2500ms"},{"width":"50%","transition":"width 1500ms ease 0"}],"stepsB":[]}]}},
-  {"slug":"mountain-slide-in","name":"Mountain slide in","value":{"style":{"x":"140px","y":"0px","z":"0px","rotateX":"0deg","rotateY":"0deg","rotateZ":"45deg"},"triggers":[{"type":"load","preload":true,"stepsA":[{"transition":"transform 1500ms ease 0","x":"0px","y":"0px","z":"0px","rotateX":"0deg","rotateY":"0deg","rotateZ":"45deg"}],"stepsB":[]}]}},
-  {"slug":"mountain-slide-in-from-left","name":"Mountain slide in from left","value":{"style":{"x":"-100px","y":"0px","z":"0px","rotateX":"0deg","rotateY":"0deg","rotateZ":"45deg"},"triggers":[{"type":"load","preload":true,"stepsA":[{"transition":"transform 1500ms ease 0","x":"0px","y":"0px","z":"0px","rotateX":"0deg","rotateY":"0deg","rotateZ":"45deg"}],"stepsB":[]}]}},
-  {"slug":"pop-in","name":"Pop in","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","preload":true,"stepsA":[{"opacity":1,"transition":"opacity 350ms ease 0, transform 450ms ease-in-out-back 0","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"pop-in-2","name":"Pop in 2","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","preload":true,"stepsA":[{"wait":"250ms"},{"opacity":1,"transition":"opacity 350ms ease 0, transform 450ms ease-in-out-back 0","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"pop-in-3","name":"Pop in 3","value":{"style":{"opacity":0,"scaleX":0.8,"scaleY":0.8,"scaleZ":1},"triggers":[{"type":"load","preload":true,"stepsA":[{"wait":"500ms"},{"opacity":1,"transition":"opacity 350ms ease 0, transform 450ms ease 0","scaleX":1,"scaleY":1,"scaleZ":1}],"stepsB":[]}]}},
-  {"slug":"play-icon-on-load","name":"Play Icon on load","value":{"style":{"x":"-100px","y":"-50%","z":"0px"},"triggers":[{"type":"load","preload":true,"loopA":true,"stepsA":[{"transition":"transform 500ms ease-in-out-back 0","x":"0px","y":"-50%","z":"0px"},{"wait":"1500ms"},{"transition":"transform 500ms ease-in-out-back 0","x":"100px","y":"-50%","z":"0px"},{"opacity":0,"x":"-100px","y":"-50%","z":"0px"},{"opacity":1,"x":"-100px","y":"-50%","z":"0px"}],"stepsB":[]}]}},
-  {"slug":"mountain-block-on-load","name":"Mountain block on load","value":{"style":{"opacity":0,"height":"0px"},"triggers":[{"type":"load","preload":true,"stepsA":[{"opacity":1,"height":"100px","transition":"height 1000ms ease-in-out-back 0, opacity 850ms ease 0"}],"stepsB":[]}]}},
-  {"slug":"arrow-load","name":"Arrow load","value":{"style":{"opacity":0},"triggers":[{"type":"load","preload":true,"stepsA":[{"opacity":1,"transition":"opacity 850ms ease 0"}],"stepsB":[]}]}}
+Webflow.require('ix').init([{
+        "slug": "column-hover",
+        "name": "Column hover",
+        "value": {
+            "style": {
+                "opacity": 0
+            },
+            "triggers": [{
+                "type": "hover",
+                "stepsA": [{
+                    "transition": "transform 1500ms ease 0",
+                    "x": "-10px",
+                    "y": "-10px",
+                    "z": "0px"
+                }],
+                "stepsB": [{
+                    "transition": "transform 1500ms ease 0",
+                    "x": "0px",
+                    "y": "0px",
+                    "z": "0px"
+                }]
+            }, {
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "opacity": 1,
+                    "transition": "opacity 1500ms ease 0",
+                    "x": "0px",
+                    "y": "0px",
+                    "z": "0px"
+                },{
+                    "opacity": 1,
+                    "transition": "opacity 1500ms ease 0",
+                    "x": "5px",
+                    "y": "5px",
+                    "z": "5px"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "column-hover-2",
+        "name": "Column hover 2",
+        "value": {
+            "style": {
+                "opacity": 0
+            },
+            "triggers": [{
+                "type": "hover",
+                "stepsA": [{
+                    "transition": "transform 500ms ease 0",
+                    "x": "-4px",
+                    "y": "-4px",
+                    "z": "0px"
+                }],
+                "stepsB": [{
+                    "transition": "transform 400ms ease 0",
+                    "x": "0px",
+                    "y": "0px",
+                    "z": "0px"
+                }]
+            }, {
+                "type": "load",
+                "preload": true,
+                "stepsA": [{
+                    "wait": "250ms"
+                }, {
+                    "opacity": 1,
+                    "transition": "opacity 500ms ease 0"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "column-hover-3",
+        "name": "Column hover 3",
+        "value": {
+            "style": {
+                "opacity": 0
+            },
+            "triggers": [{
+                "type": "hover",
+                "stepsA": [{
+                    "transition": "transform 500ms ease 0",
+                    "x": "-4px",
+                    "y": "-4px",
+                    "z": "0px"
+                }],
+                "stepsB": [{
+                    "transition": "transform 400ms ease 0",
+                    "x": "0px",
+                    "y": "0px",
+                    "z": "0px"
+                }]
+            }, {
+                "type": "load",
+                "preload": true,
+                "stepsA": [{
+                    "wait": "500ms"
+                }, {
+                    "opacity": 1,
+                    "transition": "opacity 500ms ease 0"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "tower-hover-animation",
+        "name": "Tower hover animation",
+        "value": {
+            "style": {},
+            "triggers": [{
+                "type": "hover",
+                "preserve3d": true,
+                "stepsA": [{
+                    "transition": "transform 500ms ease 0",
+                    "x": "-86px",
+                    "y": "-99px",
+                    "z": "70px"
+                }],
+                "stepsB": [{
+                    "transition": "transform 500ms ease 0",
+                    "x": "-80px",
+                    "y": "-94px",
+                    "z": "70px"
+                }]
+            }, {
+                "type": "hover",
+                "selector": ".play-box__square-1",
+                "preserve3d": true,
+                "stepsA": [{
+                    "transition": "transform 500ms ease 0",
+                    "x": "-70px",
+                    "y": "-85px",
+                    "z": "40px"
+                }],
+                "stepsB": [{
+                    "transition": "transform 500ms ease 0",
+                    "x": "-62px",
+                    "y": "-76px",
+                    "z": "50px"
+                }]
+            }, {
+                "type": "hover",
+                "selector": ".play-box__square-2",
+                "preserve3d": true,
+                "stepsA": [{
+                    "transition": "transform 500ms ease 0",
+                    "x": "-50px",
+                    "y": "-65px",
+                    "z": "10px"
+                }],
+                "stepsB": [{
+                    "transition": "transform 500ms ease 0",
+                    "x": "-41px",
+                    "y": "-60px",
+                    "z": "50px"
+                }]
+            }]
+        }
+    },
+    {
+        "slug": "hovering-on-load",
+        "name": "Hovering on Load",
+        "value": {
+            "style": {},
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "preserve3d": true,
+                "stepsA": [{
+                    "transition": "transform 1500ms ease 0",
+                    "x": "0px",
+                    "y": "0px",
+                    "z": "10px"
+                }, {
+                    "transition": "transform 1500ms ease 0",
+                    "x": "0px",
+                    "y": "0px",
+                    "z": "5px"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "hovering-on-load-string-block",
+        "name": "Hovering on Load String Block",
+        "value": {
+            "style": {
+                "opacity": 0
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "opacity": 1,
+                    "transition": "opacity 500ms ease 0"
+                }, {
+                    "transition": "transform 1500ms ease 0",
+                    "x": "-10px",
+                    "y": "-10px",
+                    "z": "0px"
+                }, {
+                    "transition": "transform 1500ms ease 0",
+                    "x": "0px",
+                    "y": "0px",
+                    "z": "0px"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "loading-line-animation",
+        "name": "Loading line animation",
+        "value": {
+            "style": {
+                "width": "0px"
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "width": "100%",
+                    "transition": "width 1500ms ease 0"
+                },{
+                    "width": "0",
+                    "transition": "width 1500ms ease 0"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "loading-line-animation-2",
+        "name": "Loading line animation 2",
+        "value": {
+            "style": {
+                "width": "0px"
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "wait": "500ms"
+                }, {
+                    "width": "100%",
+                    "transition": "width 1500ms ease 0"
+                }, {
+                    "width": "0%",
+                    "transition": "width 1500ms ease 0"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "loading-line-animation-3",
+        "name": "Loading line animation 3",
+        "value": {
+            "style": {
+                "width": "0px"
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "wait": "1000ms"
+                }, {
+                    "width": "100%",
+                    "transition": "width 1500ms ease 0"
+                }, {
+                    "width": "0%",
+                    "transition": "width 1500ms ease 0"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "loading-line-animation-6-long",
+        "name": "Loading line animation 6 long",
+        "value": {
+            "style": {
+                "width": "0px"
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "wait": "1000ms"
+                }, {
+                    "width": "100%",
+                    "transition": "width 1500ms ease 0"
+                }, {
+                    "width": "0",
+                    "transition": "width 1500ms ease 0"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "loading-line-animation-4-shortened",
+        "name": "Loading line animation 4 shortened",
+        "value": {
+            "style": {
+                "width": "0px"
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "wait": "1500ms"
+                }, {
+                    "width": "50%",
+                    "transition": "width 1500ms ease 0"
+                }
+                , {
+                    "width": "0%",
+                    "transition": "width 1500ms ease 0"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "loading-line-animation-5",
+        "name": "Loading line animation 5",
+        "value": {
+            "style": {
+                "width": "0px"
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "wait": "2000ms"
+                }, {
+                    "width": "100%",
+                    "transition": "width 2000ms ease 0"
+                }
+                , {
+                    "width": "0",
+                    "transition": "width 2000ms ease 0"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "loading-line-animation-6shorted",
+        "name": "Loading line animation 6shorted",
+        "value": {
+            "style": {
+                "width": "0px"
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "wait": "2500ms"
+                }, {
+                    "width": "50%",
+                    "transition": "width 1500ms ease 0"
+                }, {
+                    "width": "0",
+                    "transition": "width 1500ms ease 0"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "mountain-slide-in",
+        "name": "Mountain slide in",
+        "value": {
+            "style": {
+                "x": "140px",
+                "y": "0px",
+                "z": "0px",
+                "rotateX": "0deg",
+                "rotateY": "0deg",
+                "rotateZ": "45deg"
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "transition": "transform 1500ms ease 0",
+                    "x": "0px",
+                    "y": "0px",
+                    "z": "0px",
+                    "rotateX": "0deg",
+                    "rotateY": "0deg",
+                    "rotateZ": "45deg"
+                },
+                {
+                    "transition": "transform 1500ms ease 0",
+                    "x": "140px",
+                    "y": "0px",
+                    "z": "0px",
+                    "rotateX": "0deg",
+                    "rotateY": "0deg",
+                    "rotateZ": "45deg"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "mountain-slide-in-from-left",
+        "name": "Mountain slide in from left",
+        "value": {
+            "style": {
+                "x": "-100px",
+                "y": "0px",
+                "z": "0px",
+                "rotateX": "0deg",
+                "rotateY": "0deg",
+                "rotateZ": "45deg"
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "transition": "transform 1500ms ease 0",
+                    "x": "0px",
+                    "y": "0px",
+                    "z": "0px",
+                    "rotateX": "0deg",
+                    "rotateY": "0deg",
+                    "rotateZ": "45deg"
+                },{
+                    "transition": "transform 1500ms ease 0",
+                    "x": "-100px",
+                    "y": "0px",
+                    "z": "0px",
+                    "rotateX": "0deg",
+                    "rotateY": "0deg",
+                    "rotateZ": "45deg"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "pop-in",
+        "name": "Pop in",
+        "value": {
+            "style": {
+                "opacity": 0,
+                "scaleX": 0.8,
+                "scaleY": 0.8,
+                "scaleZ": 1
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "opacity": 1,
+                    "transition": "opacity 350ms ease 0, transform 450ms ease-in-out-back 0",
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "scaleZ": 1
+                },{
+                    "opacity": 0,
+                    "transition": "opacity 350ms ease 0, transform 450ms ease-in-out-back 0",
+                    "scaleX": 0.8,
+                    "scaleY": 0.8,
+                    "scaleZ": 1
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "pop-in-2",
+        "name": "Pop in 2",
+        "value": {
+            "style": {
+                "opacity": 0,
+                "scaleX": 0.8,
+                "scaleY": 0.8,
+                "scaleZ": 1
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "wait": "250ms"
+                }, {
+                    "opacity": 1,
+                    "transition": "opacity 350ms ease 0, transform 450ms ease-in-out-back 0",
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "scaleZ": 1
+                }, {
+                    "opacity":  0,
+                    "transition": "opacity 350ms ease 0, transform 450ms ease-in-out-back 0",
+                    "scaleX":  0.8,
+                    "scaleY":  0.8,
+                    "scaleZ": 1
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "pop-in-3",
+        "name": "Pop in 3",
+        "value": {
+            "style": {
+                "opacity": 0,
+                "scaleX": 0.8,
+                "scaleY": 0.8,
+                "scaleZ": 1
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "wait": "500ms"
+                }, {
+                    "opacity": 1,
+                    "transition": "opacity 350ms ease 0, transform 450ms ease 0",
+                    "scaleX": 1,
+                    "scaleY": 1,
+                    "scaleZ": 1
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "play-icon-on-load",
+        "name": "Play Icon on load",
+        "value": {
+            "style": {
+                "x": "-100px",
+                "y": "-50%",
+                "z": "0px"
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "transition": "transform 500ms ease-in-out-back 0",
+                    "x": "0px",
+                    "y": "-50%",
+                    "z": "0px"
+                }, {
+                    "wait": "1500ms"
+                }, {
+                    "transition": "transform 500ms ease-in-out-back 0",
+                    "x": "100px",
+                    "y": "-50%",
+                    "z": "0px"
+                }, {
+                    "opacity": 0,
+                    "x": "-100px",
+                    "y": "-50%",
+                    "z": "0px"
+                }, {
+                    "opacity": 1,
+                    "x": "-100px",
+                    "y": "-50%",
+                    "z": "0px"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "mountain-block-on-load",
+        "name": "Mountain block on load",
+        "value": {
+            "style": {
+                "opacity": 0,
+                "height": "0px"
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "opacity": 1,
+                    "height": "100px",
+                    "transition": "height 1000ms ease-in-out-back 0, opacity 850ms ease 0"
+                },{
+                    "opacity": 0,
+                    "height": "0px",
+                    "transition": "height 1000ms ease-in-out-back 0, opacity 850ms ease 0"
+                }],
+                "stepsB": []
+            }]
+        }
+    },
+    {
+        "slug": "arrow-load",
+        "name": "Arrow load",
+        "value": {
+            "style": {
+                "opacity": 0
+            },
+            "triggers": [{
+                "type": "load",
+                "preload": true,
+                "loopA": true,
+                "stepsA": [{
+                    "opacity": 1,
+                    "transition": "opacity 850ms ease 0"
+                },{
+                    "opacity": 0.8,
+                    "transition": "opacity 850ms ease 0"
+                }],
+                "stepsB": []
+            }]
+        }
+    }
 ]);
