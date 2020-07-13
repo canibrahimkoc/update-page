@@ -5973,12 +5973,16 @@ Webflow.require('ix').init([{
                 "preload": true,
                 "loopA": true,
                 "stepsA": [{
-                    "wait": "500ms"
-                }, {
                     "opacity": 1,
-                    "transition": "opacity 350ms ease 0, transform 450ms ease 0",
+                    "transition": "opacity 350ms ease 0, transform 450ms ease-in-out-back 0",
                     "scaleX": 1,
                     "scaleY": 1,
+                    "scaleZ": 1
+                }, {
+                    "opacity": 0,
+                    "transition": "opacity 350ms ease 0, transform 450ms ease-in-out-back 0",
+                    "scaleX": 0.8,
+                    "scaleY": 0.8,
                     "scaleZ": 1
                 }]
             }]

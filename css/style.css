@@ -627,7 +627,7 @@ body {
 .circle-top {
   position: absolute;
   left: -8px;
-  top: -4px;
+  top: -5px;
   right: 0px;
   z-index: 5;
   display: block;
