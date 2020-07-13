@@ -5,7 +5,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -20,7 +20,6 @@ body {
   background: #4353ff;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400
 }
 
@@ -36,8 +35,9 @@ body {
 .content p {
   color: #fff;
   line-height: 22px;
-  font-size: 13px;
+  font-size: 14px;
   padding: 15px;
+  letter-spacing: 0.2px;
 }
 
 .content p span {
@@ -46,9 +46,10 @@ body {
 
 .content p span.mobile-text {
   display: block;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
+  letter-spacing: 0.5px;
 }
 
 .content p span.mobile-loading {
@@ -152,8 +153,8 @@ body {
 
 .hold-illustration {
   position: absolute;
-  left: 10%;
-  top: 50%;
+  left: 18%;
+  top: 55%;
   right: 0px;
   display: block;
   width: 60%;
@@ -767,9 +768,32 @@ html.w-mod-js *[data-ix="arrow-load"] {
   opacity: 0;
 }
 
+
+
+
+
+@media (max-width: 1500px) {
+  .content {
+    left: 17%;
+    top: 10%;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .content {
+    left: 10%;
+    top: 6%;
+  }
+}
+
 @media (max-width: 991px) {
   .fs {
     overflow: hidden;
+  }
+  .content {
+    left: 10%;
+    top: 6%;
   }
   .hold-illustration {
     width: 90%;
@@ -788,57 +812,11 @@ html.w-mod-js *[data-ix="arrow-load"] {
   }
 }
 
+
 @media (max-width: 767px) {
-  .fs {
-    min-height: 100vh;
-  }
   .hold-illustration {
-    position: relative;
-    top: 50%;
-    width: 100%;
-  }
-  .text-like-box.bottom {
-    top: -280px;
-  }
-  .bottom-line-bar {
-    top: -280px;
-  }
-  .circle {
-    left: 5%;
-    top: 144px;
-  }
-  .circle-tower {
-    left: -3%;
-    top: -56px;
-  }
-  .circle-top {
-    width: 30px;
-    height: 30px;
-  }
-  .circle-top._3 {
-    left: 52px;
-  }
-}
-
-@media (max-width: 1500px) {
-  .content {
-    left: 17%;
-    top: 10%;
-  }
-}
-
-
-@media (max-width: 1000px) {
-  .content {
-    left: 10%;
-    top: 6%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .content {
-    left: 10%;
-    top: 6%;
+    top: 63%;
+    left: -50px;
   }
 }
 

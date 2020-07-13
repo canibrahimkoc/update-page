@@ -5414,35 +5414,22 @@ Webflow.require('ix').init([{
                 "opacity": 0
             },
             "triggers": [{
-                "type": "hover",
-                "stepsA": [{
-                    "transition": "transform 1500ms ease 0",
-                    "x": "-10px",
-                    "y": "-10px",
-                    "z": "0px"
-                }],
-                "stepsB": [{
-                    "transition": "transform 1500ms ease 0",
-                    "x": "0px",
-                    "y": "0px",
-                    "z": "0px"
-                }]
-            }, {
                 "type": "load",
                 "preload": true,
                 "loopA": true,
                 "stepsA": [{
                     "opacity": 1,
-                    "transition": "opacity 1500ms ease 0",
+                    "transition": "opacity 500ms ease 0"
+                }, {
+                    "transition": "transform 3000ms ease 0",
+                    "x": "-10px",
+                    "y": "-10px",
+                    "z": "0px"
+                }, {
+                    "transition": "transform 3000ms ease 0",
                     "x": "0px",
                     "y": "0px",
                     "z": "0px"
-                }, {
-                    "opacity": 1,
-                    "transition": "opacity 1500ms ease 0",
-                    "x": "5px",
-                    "y": "5px",
-                    "z": "5px"
                 }]
             }]
         }
@@ -5454,39 +5441,22 @@ Webflow.require('ix').init([{
                 "opacity": 0
             },
             "triggers": [{
-                "type": "hover",
-                "stepsA": [{
-                    "wait": "500ms"
-                },{
-                    "transition": "transform 1500ms ease 0",
-                    "x": "-10px",
-                    "y": "-10px",
-                    "z": "0px"
-                }],
-                "stepsB": [{
-                    "transition": "transform 1500ms ease 0",
-                    "x": "0px",
-                    "y": "0px",
-                    "z": "0px"
-                }]
-            }, {
                 "type": "load",
                 "preload": true,
                 "loopA": true,
                 "stepsA": [{
                     "opacity": 1,
-                    "transition": "opacity 1500ms ease 0",
+                    "transition": "opacity 500ms ease 0"
+                }, {
+                    "transition": "transform 3000ms ease 0",
+                    "x": "-10px",
+                    "y": "-10px",
+                    "z": "0px"
+                }, {
+                    "transition": "transform 3000ms ease 0",
                     "x": "0px",
                     "y": "0px",
                     "z": "0px"
-                },{
-                    "wait": "500ms"
-                }, {
-                    "opacity": 1,
-                    "transition": "opacity 1500ms ease 0",
-                    "x": "5px",
-                    "y": "5px",
-                    "z": "5px"
                 }]
             }]
         }
@@ -5499,35 +5469,22 @@ Webflow.require('ix').init([{
                 "opacity": 0
             },
             "triggers": [{
-                "type": "hover",
-                "stepsA": [{
-                    "transition": "transform 1500ms ease 0",
-                    "x": "-10px",
-                    "y": "-10px",
-                    "z": "0px"
-                }],
-                "stepsB": [{
-                    "transition": "transform 1500ms ease 0",
-                    "x": "0px",
-                    "y": "0px",
-                    "z": "0px"
-                }]
-            }, {
                 "type": "load",
                 "preload": true,
                 "loopA": true,
                 "stepsA": [{
                     "opacity": 1,
-                    "transition": "opacity 1500ms ease 0",
+                    "transition": "opacity 500ms ease 0"
+                }, {
+                    "transition": "transform 3000ms ease 0",
+                    "x": "-10px",
+                    "y": "-10px",
+                    "z": "0px"
+                }, {
+                    "transition": "transform 3000ms ease 0",
                     "x": "0px",
                     "y": "0px",
                     "z": "0px"
-                }, {
-                    "opacity": 1,
-                    "transition": "opacity 1500ms ease 0",
-                    "x": "5px",
-                    "y": "5px",
-                    "z": "5px"
                 }]
             }]
         }
@@ -5598,12 +5555,12 @@ Webflow.require('ix').init([{
                 "loopA": true,
                 "preserve3d": true,
                 "stepsA": [{
-                    "transition": "transform 1500ms ease 0",
+                    "transition": "transform 3000ms ease 0",
                     "x": "0px",
                     "y": "0px",
                     "z": "10px"
                 }, {
-                    "transition": "transform 1500ms ease 0",
+                    "transition": "transform 3000ms ease 0",
                     "x": "0px",
                     "y": "0px",
                     "z": "5px"
@@ -5626,12 +5583,12 @@ Webflow.require('ix').init([{
                     "opacity": 1,
                     "transition": "opacity 500ms ease 0"
                 }, {
-                    "transition": "transform 1500ms ease 0",
+                    "transition": "transform 3000ms ease 0",
                     "x": "-10px",
                     "y": "-10px",
                     "z": "0px"
                 }, {
-                    "transition": "transform 1500ms ease 0",
+                    "transition": "transform 3000ms ease 0",
                     "x": "0px",
                     "y": "0px",
                     "z": "0px"
@@ -5652,12 +5609,12 @@ Webflow.require('ix').init([{
                 "loopA": true,
                 "stepsA": [{
                     "width": "100%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 }, {
                     "wait": "6000ms"
                 },{
                     "width": "0%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 }]
             }]
         }
@@ -5677,12 +5634,12 @@ Webflow.require('ix').init([{
                     "wait": "500ms"
                 }, {
                     "width": "100%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 }, {
                     "wait": "5000ms"
                 },{
                     "width": "0%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 }, {
                     "wait": "500ms"
                 },]
@@ -5704,12 +5661,12 @@ Webflow.require('ix').init([{
                     "wait": "1000ms"
                 }, {
                     "width": "100%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 }, {
                     "wait": "4000ms"
                 },{
                     "width": "0%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 }, {
                     "wait": "1000ms"
                 }]
@@ -5731,12 +5688,12 @@ Webflow.require('ix').init([{
                     "wait": "1500ms"
                 }, {
                     "width": "100%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 }, {
                     "wait": "3000ms"
                 },{
                     "width": "0%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 },{
                     "wait": "1500ms"
                 }]
@@ -5758,12 +5715,12 @@ Webflow.require('ix').init([{
                     "wait": "2000ms"
                 }, {
                     "width": "100%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 }, {
                     "wait": "2000ms"
                 },{
                     "width": "0%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 },{
                     "wait": "2000ms"
                 }]
@@ -5785,12 +5742,12 @@ Webflow.require('ix').init([{
                     "wait": "2500ms"
                 }, {
                     "width": "100%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 }, {
                     "wait": "1000ms"
                 },{
                     "width": "0%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 }, {
                     "wait": "2500ms"
                 }]
@@ -5812,10 +5769,10 @@ Webflow.require('ix').init([{
                     "wait": "3000ms"
                 }, {
                     "width": "50%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 },{
                     "width": "0%",
-                    "transition": "width 1500ms ease 0"
+                    "transition": "width 3000ms ease 0"
                 },{
                     "wait": "3000ms"
                 }]
@@ -5839,7 +5796,7 @@ Webflow.require('ix').init([{
                 "preload": true,
                 "loopA": true,
                 "stepsA": [{
-                        "transition": "transform 1500ms ease 0",
+                        "transition": "transform 3000ms ease 0",
                         "x": "0px",
                         "y": "0px",
                         "z": "0px",
@@ -5848,7 +5805,7 @@ Webflow.require('ix').init([{
                         "rotateZ": "45deg"
                     },
                     {
-                        "transition": "transform 1500ms ease 0",
+                        "transition": "transform 3000ms ease 0",
                         "x": "140px",
                         "y": "0px",
                         "z": "0px",
@@ -5877,7 +5834,7 @@ Webflow.require('ix').init([{
                 "preload": true,
                 "loopA": true,
                 "stepsA": [{
-                    "transition": "transform 1500ms ease 0",
+                    "transition": "transform 3000ms ease 0",
                     "x": "0px",
                     "y": "0px",
                     "z": "0px",
@@ -5885,7 +5842,7 @@ Webflow.require('ix').init([{
                     "rotateY": "0deg",
                     "rotateZ": "45deg"
                 }, {
-                    "transition": "transform 1500ms ease 0",
+                    "transition": "transform 3000ms ease 0",
                     "x": "-100px",
                     "y": "0px",
                     "z": "0px",
@@ -6056,10 +6013,7 @@ Webflow.require('ix').init([{
         "name": "Arrow load",
         "value": {
             "style": {
-                "opacity": 0,
-                  "x": "0px",
-                  "y": "0px",
-                  "z": "0px"
+                "opacity": 0
             },
             "triggers": [{
                 "type": "load",
@@ -6067,16 +6021,17 @@ Webflow.require('ix').init([{
                 "loopA": true,
                 "stepsA": [{
                     "opacity": 1,
+                    "transition": "opacity 500ms ease 0"
+                }, {
+                    "transition": "transform 3000ms ease 0",
+                    "x": "-10px",
+                    "y": "-10px",
+                    "z": "0px"
+                }, {
+                    "transition": "transform 3000ms ease 0",
                     "x": "0px",
                     "y": "0px",
-                    "z": "0px",
-                    "transition": "opacity 1500ms ease 0"
-                }, {
-                    "opacity": 0.8,
-                    "x": "5px",
-                    "y": "5px",
-                    "z": "5px",
-                    "transition": "opacity 1500ms ease 0"
+                    "z": "0px"
                 }]
             }]
         }
