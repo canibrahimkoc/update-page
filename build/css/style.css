@@ -35,7 +35,7 @@ body {
 .content p {
   color: #fff;
   line-height: 22px;
-  font-size: 14px;
+  font-size: 15px;
   padding: 15px;
   letter-spacing: 0.2px;
 }
@@ -46,9 +46,9 @@ body {
 
 .content p span.mobile-text {
   display: block;
-  font-size: 17px;
+  font-size: 34px;
   font-weight: 500;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   letter-spacing: 0.5px;
 }
 
@@ -616,6 +616,7 @@ body {
 }
 
 .circle-tower {
+  display: none;
   position: absolute;
   left: 13%;
   top: 172px;
@@ -769,9 +770,6 @@ html.w-mod-js *[data-ix="arrow-load"] {
 }
 
 
-
-
-
 @media (max-width: 1500px) {
   .content {
     left: 17%;
@@ -812,13 +810,41 @@ html.w-mod-js *[data-ix="arrow-load"] {
   }
 }
 
-
 @media (max-width: 767px) {
   .hold-illustration {
     top: 63%;
     left: -50px;
   }
 }
+
+
+@media (max-width: 667px) {
+
+
+  .content p {
+    color: #fff;
+    line-height: 22px;
+    font-size: 14px;
+    padding: 15px;
+    letter-spacing: 0.2px;
+  }
+  
+  .content p span.mobile-text {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    letter-spacing: 0.5px;
+  }
+  
+  .content p span.mobile-loading {
+    display: block;
+    font-size: 14px;
+    padding-top: 14px;
+  }
+
+}
+
 
 @media (max-width: 479px) {
   .hold-illustration {
